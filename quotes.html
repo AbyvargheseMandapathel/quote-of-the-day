@@ -106,20 +106,11 @@ li a:hover:not(.active) {
 </ul>
 <div class="b"><center><u>Todays quote</u></center></div><br>
 <div class="d"><p id="demo"></p>
-
 <script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d.getFullYear();
-var d = new Date();
-var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-document.getElementById("demo").innerHTML = months[d.getMonth()];
+var nowDate = new Date(); 
+var date = nowDate.getFullYear()+'/'+(nowDate.getMonth()+1)+'/'+nowDate.getDate();
 </script>
-<p id="demo"></p>
 
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>
 </div>
 <div class="d"><p><u>27-01-2020</p></div></u>
 <img src="27-01-2020.png" alt="27-01" width="100%" height="100%"></img>
