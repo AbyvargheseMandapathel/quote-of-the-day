@@ -107,8 +107,8 @@ li a:hover:not(.active) {
 <div class="b"><center><u>Todays quote</u></center></div><br>
 <div class="d"><p id="demo"></p>
 <script>
-var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
 </script>
 </div>
 <div class="d"><p><u>27-01-2020</p></div></u>
